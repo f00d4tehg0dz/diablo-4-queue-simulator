@@ -2,13 +2,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaGithub, FaTwitter } from 'react-icons/fa';
 import './App.css';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   // Create a ref for the video element
   const videoRef = useRef(null);
 
-  // Initialize the state of minutes to 10
-  const [minutes, setMinutes] = useState(10);
+  // Initialize the state of minutes to 42
+  const [minutes, setMinutes] = useState(42);
 
   // Use effect hook for looping the video
   useEffect(() => {
@@ -44,6 +45,7 @@ function App() {
   // Render the component
   return (
     <div>
+      <Analytics />
       <div className="header">
         {/* GitHub link */}
         <a href="https://github.com/f00d4tehg0dz/diablo-4-queue-simulator" target="_blank" rel="noopener noreferrer">
