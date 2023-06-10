@@ -25,7 +25,7 @@ function App() {
         const random = Math.random();
 
         // If the random number is less than 0.5, decrement the minutes (but not below 0)
-        if (random < 0.5) {
+        if (random < 0.1) {
           return Math.max(minutes - 1, 0);
         }
 
