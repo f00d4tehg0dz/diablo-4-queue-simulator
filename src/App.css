@@ -53,14 +53,22 @@
   justify-content: center;
   text-align: left;
   color: #94908a;
-  font-size: 1.2vw;
+  font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.0);
+}
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .overlay-text h1 {
+    font-size: 1.2em;
+    top: 1.8vh;
+  }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
   .overlay-text h1 {
-    font-size: 2.5vw;
+    font-size: 1.2em;
     top: 1.8vh;
   }
 }
@@ -68,7 +76,7 @@
 /* Mobile */
 @media (max-width: 500px) {
   .overlay-text h1 {
-    font-size: 3vw;
+    font-size: 0.8em;
     top: 1.8vh;
   }
 }
